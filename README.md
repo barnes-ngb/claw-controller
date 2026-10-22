@@ -13,7 +13,7 @@ Retro Arcade gamepad over radio.
 | Arcade button | Number sent | Arm does |
 |---|---|---|
 | Up / Down | 1 / 2 | claw servo (S0) steps one way / the other |
-| Right / Left | 3 / 4 | motor M2 one way / the other |
+| Left / Right | 3 / 4 | motor M2 one way / the other |
 | A / B | 5 / 6 | motor M1 one way / the other |
 | nothing | 0 | stop |
 

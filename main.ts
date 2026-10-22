@@ -6,8 +6,8 @@
 //
 //   D-pad up    = 1   claw servo (S0) one way
 //   D-pad down  = 2   claw servo (S0) the other way
-//   D-pad right = 3   motor M2 one way
-//   D-pad left  = 4   motor M2 the other way
+//   D-pad left  = 3   motor M2 one way (the Joystick:bit's X reads high on the left)
+//   D-pad right = 4   motor M2 the other way
 //   A           = 5   motor M1 one way
 //   B           = 6   motor M1 the other way
 //   nothing     = 0   stop
@@ -45,12 +45,12 @@ game.onUpdateInterval(100, function () {
     } else if (controller.down.isPressed()) {
         command = 2
         label = "DOWN"
-    } else if (controller.right.isPressed()) {
-        command = 3
-        label = "RIGHT"
     } else if (controller.left.isPressed()) {
-        command = 4
+        command = 3
         label = "LEFT"
+    } else if (controller.right.isPressed()) {
+        command = 4
+        label = "RIGHT"
     } else if (controller.A.isPressed()) {
         command = 5
         label = "A"
