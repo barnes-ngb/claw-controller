@@ -2,11 +2,8 @@
     "name": "claw controller",
     "description": "",
     "dependencies": {
-        "core": "*",
-        "radio": "*",
-        "microphone": "*",
-        "wuKong": "github:elecfreaks/pxt-wukong#v1.6.0",
-        "joystickbit": "github:tinkertanker/pxt-joystickbit#v1.0.5"
+        "device": "*",
+        "radio": "*"
     },
     "files": [
         "main.blocks",
@@ -17,11 +14,11 @@
         "test.ts"
     ],
     "targetVersions": {
-        "target": "9.0.12",
-        "targetId": "microbit"
+        "target": "4.1.25",
+        "targetId": "arcade"
     },
     "supportedTargets": [
-        "microbit"
+        "arcade"
     ],
     "preferredEditor": "blocksprj"
 }
